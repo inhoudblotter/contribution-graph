@@ -25,7 +25,7 @@ export function Tooltip({ className, children, ...props }: ITooltip) {
       if (currentPostion) leftLedge += currentPostion - projection;
       if (rightLedge > 0) {
         projection -= rightLedge + 2;
-        if (projection < pos.width - 15) {
+        if (projection < -(pos.width - 15)) {
           projection = -pos.width + 15;
         }
       } else if (leftLedge < 0) {
