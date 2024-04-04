@@ -29,8 +29,6 @@ export function HeatMap({
     }
     return dates;
   }, [date]);
-  console.log(dates.length);
-  console.log(dates);
   return (
     <ul className={cn(styles.container, className)} {...props}>
       {dates.map((el, i) => (

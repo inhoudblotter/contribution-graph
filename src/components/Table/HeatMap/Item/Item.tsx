@@ -16,7 +16,7 @@ export function Item({ className, date, contributions, ...props }: IItem) {
     const level =
       contributions <= 0
         ? LEVELS[0]
-        : LEVELS.find((el) => contributions < el.threshold);
+        : LEVELS.find((el) => contributions <= el.threshold);
     return level ? level.color : LEVELS[0].color;
   }, [contributions]);
   const dateString = useMemo(() => {
