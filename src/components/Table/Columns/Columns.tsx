@@ -15,7 +15,7 @@ export function Columns({ date, className, ...props }: IColumns) {
     const months = [
       {
         label: MONTHS[cursor.getMonth()],
-        percent: 1 - getPercentageOfMonth(cursor),
+        percent: 100 - getPercentageOfMonth(cursor),
       },
     ];
     for (let i = -1; ++i < 11; ) {
