@@ -1,0 +1,14 @@
+.section {
+  display: flex;
+  min-height: 100vh;
+  min-height: 100dvh;
+  overflow: hidden;
+}
+
+.container {
+  margin: auto;
+}
+
+.table {
+  margin-bottom: 15px;
+}

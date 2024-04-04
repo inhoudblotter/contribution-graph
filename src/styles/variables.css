@@ -1,0 +1,15 @@
+:root {
+  /* COLORS */
+  --color-heat-0: #ededed;
+  --color-heat-25: #acd5f2;
+  --color-heat-50: #7fa8c9;
+  --color-heat-75: #527ba0;
+  --color-heat-100: #254e77;
+  --color-text: #959494;
+  --color-tooltip: #000;
+  --color-text-tooltip: #fff;
+  --color-text-tooltip-underline: #7c7c7c;
+  /* FONTS */
+  --font-text: 400 12px/14.52px "Inter", sans-serif;
+  --font-underline: 400 10px/12.1px "Inter", sans-serif;
+}

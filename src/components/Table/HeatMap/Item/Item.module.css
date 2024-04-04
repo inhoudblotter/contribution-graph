@@ -1,0 +1,26 @@
+.container {
+  position: relative;
+  background-color: var(--color);
+  cursor: pointer;
+}
+
+.container:hover {
+  outline: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.tooltip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.count,
+.date {
+  text-wrap: nowrap;
+}
+
+.date {
+  font: var(--font-underline);
+  color: var(--color-text-tooltip-underline);
+}

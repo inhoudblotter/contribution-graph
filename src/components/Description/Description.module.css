@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 6.45px;
+}
+
+.label {
+  font: var(--font-text);
+  color: var(--color-text);
+}
+
+.levels {
+  display: flex;
+  gap: 2px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
