@@ -25,9 +25,16 @@ export function Tooltip({ className, children, ...props }: ITooltip) {
       if (currentPostion) leftLedge += currentPostion - projection;
       if (rightLedge > 0) {
         projection -= rightLedge + 2;
+        if (projection < pos.width - 15) {
+          projection = -pos.width + 15;
+        }
       } else if (leftLedge < 0) {
         projection -= leftLedge - 2;
+        if (projection > pos.width - 15) {
+          projection = pos.width - 15;
+        }
       }
+
       el.style.setProperty(
         "--left-position",
         `${Math.round(projection * 1000) / 1000}px`
